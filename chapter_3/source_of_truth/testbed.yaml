@@ -1,0 +1,17 @@
+---
+
+testbed:
+  name: IPv6 is awesome
+
+devices:
+  cat8000v:
+    connections:
+      cli:
+        ip: 10.10.20.48
+        protocol: ssh
+    credentials:
+      default:
+        password: C1sco12345
+        username: developer
+    os: iosxe
+    type: iosxe

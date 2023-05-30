@@ -1,0 +1,21 @@
+Interfaces:
+    GigabitEthernet:
+      - number: 1
+        description: Towards internet
+        ipv6:
+            - type: static
+              address: 2001:db8:2200:001::01
+              prefix: 64
+        ipv4:
+            - type: dhcp
+      - number: 2
+        description: Towards LAN
+        ipv6_prefix:
+        ipv6:
+            - type: static
+              address: 2001:db8:2200:001::10
+              prefix: 64
+        ipv4:
+            - type: static
+              address: 10.20.30.1
+              prefix: 255.255.255.0

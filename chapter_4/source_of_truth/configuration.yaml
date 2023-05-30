@@ -1,0 +1,6 @@
+Routes:
+  - ip: "::"
+    subnet: /0
+    next_hop:
+      - hop: 2001:db8:3002:10::ffff
+        distance: 1
