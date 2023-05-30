@@ -1,6 +1,6 @@
 # 6+3=100! Use IPv6 and Python 3 to transform how you do networking
 
-This repository includes the supplemental material for the Cisco Live Technical Seminar TECENT-2150 (delivered in Cisco Live US 2023). In this repository you can find both the code for demos delivered during the session, as well as exercises for each of the chapter included in this seminar to give you some practice on the covered topics.
+This repository includes the supplemental material for the Cisco Live Technical Seminar TECENT-2150 (delivered in Cisco Live US 2023). In this repository you can find the code for demos that were delivered during the session.
 
 ![Banner image](banne_picture.png)
 
