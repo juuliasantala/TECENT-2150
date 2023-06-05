@@ -1,6 +1,6 @@
 {
-        "Cisco-IOS-XE-native:interface": {
-            "GigabitEthernet": [
+    "Cisco-IOS-XE-native:interface": {
+        "GigabitEthernet": [
             {% for interface in interfaces.GigabitEthernet%}
                 {
                     "name": "{{interface.number}}",
