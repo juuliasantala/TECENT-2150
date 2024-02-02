@@ -1,8 +1,8 @@
 # 6+3=100! Use IPv6 and Python 3 to transform how you do networking
 
-This repository includes the supplemental material for the Cisco Live Technical Seminar TECENT-2150 (delivered in Cisco Live US 2023). In this repository you can find the code for demos that were delivered during the session.
+This repository includes the supplemental material for the Cisco Live Technical Seminar TECENT-2150 (delivered in **Cisco Live US 2023** and **Cisco Live EMEA 2024**). In this repository you can find the code for demos that were delivered during the session.
 
-![Banner image](banne_picture.png)
+![Banner image](banner_picture.png)
 
 All the scripts have been tested against the DevNet reservable sandbox on May 2023: **[IOS XE on Cat 8kv Latest Code](https://devnetsandbox.cisco.com/RM/Diagram/Index/a5823504-3391-47cc-93a4-8bcadc701839?diagramType=Topology)** (Requires login with DevNet credentials)
 
