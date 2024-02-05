@@ -5,12 +5,12 @@ Simple Python sample script for updating ONE interface configuration with RESTCO
 Please review the other script 'update_interface_config.py' in this repo to see a more
 scalable implementation.
 
-The script has been tested with DevNet reservable sandbox on May 2023:
-"IOS XE on Cat 8kv Latest Code"
+The script has been tested with DevNet reservable sandbox on February 2024:
+"IOS XE on Cat 8kv"
 
 ------------
 
-Copyright (c) 2023 Cisco and/or its affiliates.
+Copyright (c) 2024 Cisco and/or its affiliates.
 This software is licensed to you under the terms of the Cisco Sample
 Code License, Version 1.1 (the "License"). You may obtain a copy of the
 License at

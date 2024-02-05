@@ -3,12 +3,12 @@
 """
 Python sample script for viewing interface configuration with RESTCONF.
 
-The script has been tested with DevNet reservable sandbox on May 2023:
-"IOS XE on Cat 8kv Latest Code"
+The script has been tested with DevNet reservable sandbox on February 2024:
+"IOS XE on Cat 8kv"
 
 ------------
 
-Copyright (c) 2023 Cisco and/or its affiliates.
+Copyright (c) 2024 Cisco and/or its affiliates.
 This software is licensed to you under the terms of the Cisco Sample
 Code License, Version 1.1 (the "License"). You may obtain a copy of the
 License at
@@ -29,7 +29,7 @@ import urllib3
 
 __author__ = "Juulia Santala"
 __email__ = "jusantal@cisco.com"
-__copyright__ = "Copyright (c) 2023 Cisco and/or its affiliates."
+__copyright__ = "Copyright (c) 2024 Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.1"
 
 # Following line disables warnings of the unverified certificate. Do not use in production!

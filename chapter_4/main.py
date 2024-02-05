@@ -3,7 +3,7 @@
 Example script to make change static routes with test-driven approach.
 Before and after the change, a test is ran, to signify whether tests pass or not.
 
-Copyright (c) 2023 Cisco and/or its affiliates.
+Copyright (c) 2024 Cisco and/or its affiliates.
 This software is licensed to you under the terms of the Cisco Sample
 Code License, Version 1.1 (the "License"). You may obtain a copy of the
 License at
@@ -24,7 +24,7 @@ import update_static_routes
 import helper_functions
 import webex
 
-__copyright__ = "Copyright (c) 2023 Cisco and/or its affiliates."
+__copyright__ = "Copyright (c) 2024 Cisco and/or its affiliates."
 __license__ = "Cisco Sample Code License, Version 1.1"
 __author__ = "Juulia Santala"
 __email__ = "jusantal@cisco.com"

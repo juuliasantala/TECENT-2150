@@ -51,3 +51,14 @@ Configuration:
 
 > **Note**
 > The YANG payload above means IPv6 is configured. As the older NETCONF supports only XML, the YANG model in JSON format sometimes includes only a key pointing to an empty list to identify that that exists in the device configuration.
+
+## Work with IP address library
+
+Python comes with a library `ipaddress` for IPv4/IPv6 manipulation. The documentation provides details on all of the supported functionalities: https://docs.python.org/3/library/ipaddress.html
+
+To use the library in your code, you simply need to import it:
+```python
+import ipaddress
+```
+
+To see examples of how the library could be used, please look through the `ipaddress_examples.py` script.

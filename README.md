@@ -4,9 +4,9 @@ This repository includes the supplemental material for the Cisco Live Technical 
 
 ![Banner image](banner_picture.png)
 
-All the scripts have been tested against the DevNet reservable sandbox on May 2023: **[IOS XE on Cat 8kv Latest Code](https://devnetsandbox.cisco.com/RM/Diagram/Index/a5823504-3391-47cc-93a4-8bcadc701839?diagramType=Topology)** (Requires login with DevNet credentials)
+All the scripts have been tested against the DevNet reservable sandbox on February 2024: **[IOS XE on Cat8kv](https://devnetsandbox.cisco.com/DevNet/catalog/IOS%20XE%20on%20Cat8kv)** (Requires login with DevNet credentials)
 
-> **Note**: Except for the chapter 4, all the scripts can be run against the sandbox. Chapter 4 configuration changes work as well, however due to the limitation of the Sandbox internet connectivity, the ping test will fail also after the configuration change has been deployed.
+> **Note**: Except for the chapter 4, all the scripts can be run against the sandbox. Chapter 4 configuration changes work as well, however due to the limitation of the Sandbox internet connectivity, all ping test will fail also after the configuration change has been deployed.
 
 ## Prepare to run the code
 
