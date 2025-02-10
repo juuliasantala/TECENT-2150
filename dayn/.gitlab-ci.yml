@@ -1,0 +1,29 @@
+stages:
+  - pre-test
+  - deploy
+  - post-test
+
+Pre-Test Configuration:
+  stage: pre-test
+  image: ciscotestautomation/pyats
+  script:
+    - python test_address.py
+
+Pre-Test Connectivity:
+  stage: pre-test
+  image: ciscotestautomation/pyats
+  script:
+    - python test_ping.py
+  allow_failure: true
+
+deploy:
+  stage: deploy
+  script:
+    - pip install -r requirements_for_pipeline_deploy_stage.txt
+    - python configure_intf.py
+
+Post-Test Connectivity:
+  stage: post-test
+  image: ciscotestautomation/pyats
+  script:
+    - python test_ping.py

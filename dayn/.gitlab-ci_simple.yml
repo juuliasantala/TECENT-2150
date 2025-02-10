@@ -1,0 +1,17 @@
+Test Configuration:
+  stage: test
+  image: ciscotestautomation/pyats
+  script:
+    - python test_address.py
+
+Test Connectivity:
+  stage: test
+  image: ciscotestautomation/pyats
+  script:
+    - python test_ping.py
+
+deploy:
+  stage: deploy
+  script:
+    - pip install -r requirements_for_pipeline_deploy_stage.txt
+    - python configure_intf.py

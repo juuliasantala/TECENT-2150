@@ -1,8 +1,0 @@
-devices:
-    - 10.10.20.48
-
-# These are sandbox credentials.
-# NEVER push your network credentials to GitHub!!
-credentials:
-    password: C1sco12345
-    username: developer

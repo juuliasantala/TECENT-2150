@@ -1,0 +1,35 @@
+<config>
+    <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <interface>
+        {% for interface in interfaces %}
+            <GigabitEthernet>
+                <name>{{ interface.number }}</name>
+                <description>{{ interface.description }}</description>
+                <ipv6>
+                    <enable/>
+                    <ospf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ospfv3">
+                        <process>
+                            <id>{{ interface.ospfv3.process_id }}</id>
+                            <area>{{ interface.ospfv3.process_area }}</area>
+                        </process>
+                    </ospf>
+                    {% if interface.ipv6_address %}
+                    <address>
+                        <prefix-list>{% for address in interface.ipv6_address %}
+                            <prefix>{{ address }}</prefix>
+                        </prefix-list>{% endfor %}
+                    </address>{% endif %}
+                    {% if interface.nd_prefix %}
+                    <nd>
+                        <prefix xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-nd">
+                            <ipv6-prefix-list>
+                                <ipv6-prefix>{{ interface.nd_prefix }}</ipv6-prefix>
+                            </ipv6-prefix-list>
+                        </prefix>
+                    </nd>{% endif %}
+                </ipv6>
+            </GigabitEthernet>
+            {% endfor %}
+        </interface>
+    </native>
+</config>

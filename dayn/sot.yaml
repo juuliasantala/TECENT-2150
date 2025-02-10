@@ -1,0 +1,61 @@
+---
+
+R2:
+    mgmt: "198.18.7.2"
+    interfaces:
+        - type: "GigabitEthernet"
+          number: "4"
+          description: "TO R1"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"
+        - type: "GigabitEthernet"
+          number: "5"
+          description: "TO Finland"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"
+        - type: "GigabitEthernet"
+          number: "6"
+          description: "TO Japan"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"
+
+R3:
+    mgmt: "198.18.11.2"
+    interfaces:
+        - type: "GigabitEthernet"
+          number: "4"
+          description: "TO R2"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"
+        - type: "GigabitEthernet"
+          number: "5"
+          description: "TO Finland office"
+          ipv6_address:
+              - "2001:420:4021:1bc5::1/64"
+          nd_prefix: "2001:420:4021:1bc5::/64"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"
+
+R4:
+    mgmt: "198.18.12.2"
+    interfaces:
+        - type: "GigabitEthernet"
+          number: "4"
+          description: "TO R2"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"
+        - type: "GigabitEthernet"
+          number: "5"
+          description: "TO Japan office"
+          ipv6_address:
+              - "2001:420:4021:1bd5::1/64"
+          nd_prefix: "2001:420:4021:1bd5::/64"
+          ospfv3:
+              process_id: "1"
+              process_area: "0"

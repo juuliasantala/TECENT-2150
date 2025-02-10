@@ -1,0 +1,33 @@
+---
+
+testbed:
+  name: SixSnakes testbed
+  credentials:
+    default:
+      username: developer
+      password: C1sco12345
+    enable:
+      password: C1sco12345
+
+devices:
+  R1:
+    connections:
+      cli:
+        ip: 198.18.133.101
+        protocol: ssh
+    os: iosxe
+    type: iosxe
+  R3:
+    connections:
+      cli:
+        ip: 198.18.11.2
+        protocol: ssh
+    os: iosxe
+    type: iosxe
+  R4:
+    connections:
+      cli:
+        ip: 198.18.12.2
+        protocol: ssh
+    os: iosxe
+    type: iosxe
